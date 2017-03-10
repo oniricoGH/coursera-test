@@ -1,0 +1,71 @@
+.navbar-default{
+	background-color: maroon;
+	border-radius: 0;
+ 	margin-bottom: 0px;
+ 	border: 0px;
+}
+
+.navbar-default .navbar-brand{
+    color: yellow;
+    font-size: 1.8em;
+}
+
+.navbar-default .navbar-brand:hover{
+	color: orange;
+}
+
+.navbar-nav li a{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 3.5vw;
+	color: yellow;
+	background-color: maroon;
+}
+
+.navbar-nav li a:hover{
+	color: orange;
+	background-color: grey;
+    text-transform: uppercase;
+	font-size: 3.5vw;
+}
+
+.navbar-nav{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+
+.navbar-nav li a:focus{
+	color: yellow;
+	background-color: blue;
+    text-transform: uppercase;
+	font-size: 3.5vw;
+}
+
+body h2{
+	text-transform: uppercase;
+	margin: 40px 0px;
+	font-size: 48px;
+}
+
+#myDiv1{
+	border: 3px dashed maroon;
+	background-color: green;
+	color: yellow;
+	padding: 5px 15px 15px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 24px;
+	text-align: justify;
+	margin-bottom: 15px;
+}
+
+#myDiv1 h3{
+	font-size: 28px;
+	background-color: olive;
+	color: yellow;
+	border: 1px solid black;
+	text-transform: uppercase;
+	text-align: center;
+}
+
