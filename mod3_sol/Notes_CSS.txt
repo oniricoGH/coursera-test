@@ -1,0 +1,110 @@
+CSS
+
+—————
+Box model
+—————
+
+A veces los navegadores, en el modelo de la caja, pone su propio estilo. Hay que sobreescribirlo en el estilo.
+
+padding (horario): 10px 10px 10px 10px = 10px
+
+top right bottom left
+
+Every div is a inside box into the last box.
+
+The height and width of the box is the width of the content without padding and border.
+
+Si se especifica box-sizing: border-box; se fija al máximo que dicen esas medidas.
+
+Hay reglas que los hijos no heredan (box-sizing). * selector. … se aplica a todos los elementos que aparecen supongo debajo.
+
+Cumulative margins: horizontal sí se suman, vertical no se suma, gana el mayor.
+
+La regla overflow arregla que no se salgan contenidos de las cajas donde están definidos. Se puede ocultar con hidden o crear una barra con auto.
+
+—————
+Background property
+—————
+
+—————
+Position by Floating
+—————
+
+The regular document flow applies over changes. If an element is moved to the right with float all the other elements are rearranged (out of the general document flow). With clear es como si vuelves a quitar los floats anteriores para que el documento siga como está. Nothing is allowed to float to the left of this.
+
+Mirar con más ejemplos hasta entender. Es importante.
+
+—————
+Relative Positioning
+—————
+
+It is moved from the original place in the document.
+
+position: relative
+(from) left: 50px;
+(from) top: 50px;
+
+se mueve hacia el centro.
+
+Si se quiere ver más lógico:
+
+right: -50px;
+bottom: -50px;
+
+Si es relativo no se recolocan los demás elementos. Si es absoluto sí se recolocan. Jerárquicamente el elemento va buscando el contenedor que tenga la regla de posición para colocarse de manera absoluta respecto a este. Si no encuentra ninguno se irá hasta <html> por lo que será absoluto de la página. Se saca del flujo normal del documento.
+
+————
+Media Queries
+————
+Utilizado por ejemplo para crear plantillas responsive.
+
+@media (“style”)
+
+if(max-width==767) then
+{ }
+
+@media (max-width: 767px)
+{
+/* Hoja de estilo*/
+p  {
+color: blue;
+    }
+}
+
+
+- Opciones: max-width, min-width, orientation, screen, print...
+
+Normalmente la hoja está definida con base styles y luego encadenados varias media queries que no se solapen a poder ser.
+
+Cuando metemos una plantilla responsive y se abre en un navegador móvil, automáticamente hace un zoom-out para meter más contenido en la pantalla. El factor se puede ver en chrome cuando se simula un dispositivo móvil, en la esquina superior derecha. Hay que decirle al navegador que somos responsive y que no hace falta que haga ese zoom-out. 
+
+<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+
+!Bootstrap!
+
+Grid: cl-‘size’-‘span’. Example: cl-md-6 significa columnas que ocupan 6/12 (lo que significa dos por fila) y entra en funcionamiento cuando el ancho de la pantalla es medium (>=992px). Example: cl-lg-3: columnas que ocupan 3/12 (cuatro por fila) y entra en funcionamiento si la pantalla es grande (>=1200px). Estos estilos se pueden concatenar en los diferentes elementos para que, en función del tamaño de la pantalla se aplique un estilo u otro. Mejora el comportamiento responsive. Si se define cl-xs-4 significa que habrá tres columnas por fila para cualquier tamaño ya que está pensado para dispositivos pequeños.
+
+
+****
+  3
+****
+——
+Visit with the client
+——
+Clients don’t know what they want
+Ask questions
+General examples
+Less information is more!
+Which is the most important?
+
+
+Uno es head y otro es header.
+
+Fuentes: https://fonts.google.com/
+
+
+
+
+
+
+

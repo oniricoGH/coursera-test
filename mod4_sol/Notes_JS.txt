@@ -1,0 +1,30 @@
+JS
+
+A variable is undefined if it is declared but not set to any specific value.
+
+Strict equality : ===
+
+4==‘4’ -> true
+4===‘4’ -> false
+
+Console: Boolean(something) -> evaluate a value
+
+Semicolons always at the end
+
+Functions are objects.
+
+Primitives passed by value, objects passed by reference.
+
+Function with this are constructors and are capitalized.
+Function prototypes are defined out of the constructor. They are share by all objects for a certain object.
+
+This inside an object or a constructor points to the created object.
+Careful in inner functions: this could point to global (window) instead of to the object itself.
+
+New object { x: 5}
+
+for(var prop in myObj) -> prop is an index. Arrays are objects, then elements are properties and vice versa.
+
+Variables declared on the main thread of any js file are always part of the global object. 
+
+IIFE: (function(){})();

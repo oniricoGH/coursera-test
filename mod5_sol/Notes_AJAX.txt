@@ -1,0 +1,48 @@
+AJAX
+
+DOM: Document Object Manipulation
+
+window.document
+
+IDs from HTML elements are used to target actions from DOM
+
+document.getElementByID(“title”)
+
+document.getElementByID(“title”).value is for input elements (like an input box)
+
+document.getElementByID(“title”).textContent is for write words in a section
+
+document.getElementByID(“title”).innerHTML is for inserting HTML code in the HTML document.
+
+- Retrieve a value and reset it with the new one
+document.querySelector(“#id”).textContent for example getting the words inside this element.
+
+- To keep clean the HTML code
+document.querySelector(“button”).addEventListener(“click”, function);
+
+- Define JS before any CSS or HTML content with DOMContentLoaded. Otherwise with need all the elements with IDs already loaded in order to use them in the JS.
+
+URN, URI, URL (Locator)
+
+First URL must be resolved and consequently connected to the server. Then through the URI a resource is retrieved.
+
+AJAX - Asynchronus Javascript And XML (now JSON is widely extended). Se utiliza para ejecutar pequeñas acciones en la web. Antiguamente se cargaba una página nueva completa y ahora, utilizando este protocolo, se cargan sólo pequeñas partes.
+
+The JS threat execution continues after making an AJAX request to the HTTP Requestor, from which will get a respond some time later.
+
+request.open(“GET”, requestUrl, true); true means async, false means sync.
+
+request.send(null); null means no body content
+
+JSON: like JS but properties are in “”, JSON is just a string.
+
+JSON.parse, JSON.stringify
+
+
+jQuery $ function - $ is the name of the jQuery function
+
+Snippets are used to refresh small parts of the current page. It is very easy to see in blogs: only the content can be requested and not all the elements that wrap it.
+
+We want to download data in JSON language from an external server (CROS). herokuapp.com
+
+JS creates dynamic HMTL pages.
